@@ -13,100 +13,28 @@
 
 <title class="date">ewds</title>
 </head>
-
-
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.show {display:block;}
-</style>
-</head>
 <body>
 <h1 class="butter">edd's web dev site</h1>
 
 
-<ul>
-  <li><a class="active" href="index.html">home</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">DhD</a>
-    <div class="dropdown-content" id="myDropdown">
-      <a href="dhd.html">intro</a>
-      <a href="logindhd.html">login</a>
-    <a href="blog.html">blog</a>
-    </div>
-  </li>
-</ul>
 
-
-
-
-<script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    for (var d = 0; d < dropdowns.length; d++) {
-      var openDropdown = dropdowns[d];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
 
 <br>
+<nav>
+  <ul>
+    <li>
+      <a href="index.html">edd</a>
+    </li>
+    <li>
+      <a href="blog.html">dhd blog</a>
+    <li>
+      <a href="dhd.html">dhd</a>
+    </li>
+    <li>
+      <a href="#">Contact</a>
+    </li>
+  </ul>
+</nav>
 
 
 
@@ -122,29 +50,50 @@ window.onclick = function(e) {
     <div>
     <p class="open">latest blog post...
         </p></div>
-<br>
-<div>
 
-    <br>
-<div>
-      <article class="article">This is my first day attempeting to create a basic HTML web site with CSS flairs. This particular website is for NE2U. A company that I am affiliated with in many ways. <br class="date">17:09MST03JUL2016</br>
-    <br>
 
-</div>
+
+
+
+
+
 <div>
-     <br>
     <article class="article">
         <p>
-            <span class="blacktext">27JUL20162214</span>
+            <span class="date">17JUL20162214</span>
             <br>
             Today I have figured out links and how to add the properly whithin my html doc for uploading thru my godaddy account. I have also redesiged the menu bar, though it is not final. the font is final. the color need work. I have also upddated all my web pages for mobile use. Thanks to NicholasVOTPCEO reminding me of such an error. This is my last week of Shaw Academy Web Dev course. I have learned a lot and I have found out to create working links on my blog with is hosting using Godaddy. I have a lot more I need to learn. But for my first real attempt at using godaddy and git commands, I believe I have done a good job.
       <p>*
         <span class="redtext">UPDATE
         </span>
-        *: DhD is in production!
+        *: <br>DhD is in production!
         </p>
-        </p>
+      </p>
     </article>
+</div>
+
+
+
+
+<div>
+      <article class="article">
+            <span class="date">17:09MST03JUL2016</span>
+            <br>
+      This is my first day attempeting to create a basic HTML web site with CSS flairs. This particular website is for NE2U. A company that I am affiliated with in many ways. 
+    <br>
+    <p>*
+        <span class="redtext">UPDATE
+        </span>
+        *:
+        <br>Working on linking pages and foundation with godaddy.
+        </p>
+
+
+
+</div>
+<div>
+     <br>
+    
 
     <br>
 
