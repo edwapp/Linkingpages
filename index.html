@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:700" rel="stylesheet">
@@ -9,31 +13,101 @@
 
 <title class="date">ewds</title>
 </head>
-<body>
-<p class="title">Edd's Web Development Site</p>
-    <br>
-<div class="drop">
-<ul class="drop_menu">
-<li><a href='#'>blog</a>
-	<ul>
-	<li><a href='#'>recent</a></li>
-	<li><a href='#'>archive</a></li>
-	</ul>
-</li>
-<li><a href='#'>projects</a>
-	<ul>
-	<li><a href='#'>current</a></li>
-	<li><a href='#'>archive</a></li>
-	<li><a href='#'>beta</a></li>
-	</ul>
-<li><a href="dhd.html">dhd</a>
-	<ul>
-	<li><a href="logindhd.html">log in</a></li>
-    <li><a href="page2.html">blog</a></li>
-    </ul>
 
-</li>
-</div>
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+</head>
+<body>
+<h1 class="butter">edd's web dev site</h1>
+
+
+<ul>
+  <li><a class="active" href="index.html">home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">DhD</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="dhd.html">intro</a>
+      <a href="logindhd.html">login</a>
+    <a href="blog.html">blog</a>
+    </div>
+  </li>
+</ul>
+
+
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<br>
+
 
 
     <p class="open">Welcome to my Web Development site. My name is edd app. I am your favorite app dev. I will now show you what my team and I is working on.
@@ -75,3 +149,4 @@
     </footer>
 </body>
 </html>
+
